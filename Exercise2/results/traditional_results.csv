@@ -1,0 +1,4 @@
+method,dataset,Average Accuracy,Average Training Time
+RandomForest,wine_quality,0.8621072674373549,2.765367031097412
+RandomForest,congression_voting,0.9543804053607975,0.10229182243347168
+RandomForest,bank_marketing,0.9322301304874495,3.7480857372283936
