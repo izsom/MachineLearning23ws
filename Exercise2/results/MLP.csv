@@ -1,4 +1,4 @@
-,method,dataset,Average Accuracy,Average Training Time
-0,MLP,wine_quality,0.5400959317818441,3.4607074737548826
-1,MLP,congression_voting,0.9217758985200846,1.0102809906005858
-2,MLP,bank_marketing,0.8596178406501517,11.061345338821411
+,method,dataset,Average F1,Average Training Time
+0,MLP,wine_quality,0.4677703898119446,1.7736927032470704
+1,MLP,congression_voting,0.9490670535321583,0.5975491523742675
+2,MLP,bank_marketing,0.8642941076300268,2.5332173824310305
