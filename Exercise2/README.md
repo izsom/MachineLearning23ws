@@ -15,7 +15,7 @@
 ├── comparison.ipynb                  # Notebook containing the comparison of the classifiers
 ├── mlp.ipynb                         # Notebook containing the MLP classifier
 ├── nn_grid_search.ipynb              # Notebook containing the grid search for our own NN implementation
-├── nn_implementation.py              # Our own NN implementation with torch
+├── nn_implementation.py              # Our own NN implementation with pytorch
 ├── nn_local_search.ipynb             # Notebook containing the local search for our own NN implementation
 ├── rf_class.ipynb                    # Notebook containing the training and prediction for RandomForestClassifier (based on traditional_class.py)                            
 └── traditional_class.py              # Notebook containing the functions for the RandomForestClassifier pipeline
