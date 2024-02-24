@@ -1,0 +1,4 @@
+Image-deblurring-CNN:
+- training the model with the original dataset (in total 349 images) using train-test-val split took 21.145 minutes on colab using GPU (25 epochs) -> GaussianBlur = 51
+- training the model with our chosen dataset (subset of 2017 Val images from coco - in total 500 images) using train-test-val split took 18.344 minutes on colab using GPU (50 epochs) -> GaussianBlur = 51 (badresults bc too much blur)
+- training the model with our chosen dataset (-||-) using train-test-val split took 14.139 minutes on colab using GPU (50 epochs) -> GaussianBlur = 15
