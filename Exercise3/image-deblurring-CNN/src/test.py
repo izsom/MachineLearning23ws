@@ -17,7 +17,7 @@ device = 'cpu'
 
 # load the trained model
 model = models.CNN().to(device).eval()
-model.load_state_dict(torch.load('../outputs/model.pth'))
+model.load_state_dict(torch.load('../outputs/model.pth', map_location=torch.device('cpu')))
 
 # define transforms
 transform = transforms.Compose([
@@ -26,12 +26,12 @@ transform = transforms.Compose([
     transforms.ToTensor(),
 ])
 
-name = 'image_1'
+name = '25_HUAWEI-Y9_S'
 
 image = cv2.imread(f"../test_data/gaussian_blurred/{name}.jpg")
 orig_image = image.copy()
 orig_image = cv2.resize(orig_image, (224, 224))
-cv2.imwrite(f"../outputs/test_deblurred_images/original_blurred_image_1.jpg", orig_image)
+cv2.imwrite(f"../outputs/test_deblurred_images/25_HUAWEI-Y9_S.jpg", orig_image)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 image = transform(image).unsqueeze(0)
@@ -39,5 +39,5 @@ print(image.shape)
 
 with torch.no_grad():
     outputs = model(image)
-    save_decoded_image(outputs.cpu().data, name=f"../outputs/test_deblurred_images/deblurred_image_1.jpg")
+    save_decoded_image(outputs.cpu().data, name=f"../outputs/test_deblurred_images/deblurred_25_HUAWEI-Y9_S.jpg")
 
