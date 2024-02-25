@@ -7,6 +7,7 @@ Third step is to test our model using the test_models.ipynb from the src folder.
 The final step is to use the data created during testing for the evaluation, which is done in the evaluation.ipynb (located in the src folder)
 
 Shortly:
+0. create a virtual environment and install the required packages (pip install -r requirements.txt)
 1. run add_gaussian_blur.ipynb
 2. OPTIONAL! - run train.py or training_colab.ipynb - OPTIONAL!
 3. run test_models.ipynb
